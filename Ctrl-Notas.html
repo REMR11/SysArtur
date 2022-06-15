@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <script type="text/javascript">         </script>
+    <link href="Stylos-CNotas.css" rel="stylesheet">
+    <title>Regirsto de notas</title>
+    <div>
+        <h1 class="text-center">Ingreso de notas</h1>
+    </div>
+</head>
+
+<body>
+    <br>
+    <form>
+        <div class="row mb-3">
+            <label for="Label" class="col-sm-1 col-form-label">Docente</label>
+            <div class="col-sm-3">
+                <select id="inputState" class="form-select">
+                    <option selected>Selecione</option>
+                    <option>José Antonio Orellana Menjivar</option>
+                    <option>Ana Flor </option>
+                    <option>Mauricio Días</option>
+                    <oPtion>Josué Alejandro Rodriguez Mancia</oPtion>
+                </select>
+            </div>
+
+            <label for="Label" class="col-sm-1 col-form-label">Grado </label>
+            <div class="col-sm-2">
+                <select id="inputState" class="form-select">
+                    <option selected>Selecione</option>
+                    <option>1° "A" </option>
+                    <option>2° "A" </option>
+                    <option>3° "A" </option>
+                    <option>4° "A" </option>
+                </select>
+            </div>
+
+            <label for="Label" class="col-sm-1 col-form-label">Materia </label>
+            <div class="col-sm-2">
+                <select id="inputState" class="form-select">
+                    <option selected>Selecione</option>
+                    <option>Matematica</option>
+                    <option>Sociales</option>
+                    <option>Lenguaje</option>
+                    <option>Ciencia</option>
+                </select>
+            </div>
+            <label for="Label" class="col-sm-1 col-form-label">Periodo </label>
+            <div class="col-sm-1">
+                <select id="inputState" class="form-select">
+                    <option selected>Selec.</option>
+                    <option>C11</option>
+                    <option>C12</option>
+                    <option>C13</option>
+                </select>
+            </div>
+
+        </div>
+        <br>
+        <div class="row-mb-3">
+            
+            <div class="row">
+                <div class="col-sm-2">
+                    <input type="text" id="inputnie" class="form-control" placeholder="NIE">
+                </div>
+                <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary mb-3">Buscar</button>
+                </div>
+            </div>
+        </div>
+        <div class="row-mb-3">
+           
+            <div class="row">
+                <br>
+
+                <div class="col-sm-2">
+                    <label for="Label" class="col-sm-1 col-form-label">NIE</label>
+                    <input type="text" id="inputnie" class="form-control" placeholder="NIE" >
+                </div>
+                <div class="col-sm-3">
+                    <label for="Label" class="col-sm-1 col-form-label">Apellidos</label>
+                    <input type="text" id="inputnie" class="form-control" placeholder="Apellidos">
+                </div>
+                <div class="col-sm-3">
+                    <label for="Label" class="col-sm-1 col-form-label">Nombres</label>
+                    <input type="text" id="inputnie" class="form-control" placeholder="Nombres">
+                </div>
+                <div class="col-sm-1">
+                    <label for="Label" class="col-sm-1 col-form-label">Nota</label>
+                    <input type="text" id="inputnie" class="form-control" placeholder="Nota">
+                </div>
+                <div class="row-sm-1">
+                    <br>
+                    <button type="submit" class="btn btn-primary mb-3">Guardar</button>
+                </div>
+            </div>
+            <div class="row-mb-3">
+                <br>
+              
+                <div class="row">
+                    
+                    <h2 class="text-center">Listado de notas</h2>
+                    <br>
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col" >NIE</th>
+                            <th scope="col">Apellidos</th>
+                            <th scope="col">Nombres</th>
+                            <th scope="col">Nota</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>123456-7</td>
+                            <td>Rodriguez Mancia</td>
+                            <td>Josué Alejandro </td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>123456-8</td>
+                            <td>Mejia Reinosa</td>
+                            <td>Ronald Eduardo </td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>123456-9</td>
+                            <td>Orellana Menjivar</td>
+                            <td>José Antonio</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>123456-9</td>
+                            <td>Orellana Menjivar</td>
+                            <td>José Antonio</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>123456-9</td>
+                            <td>Orellana Menjivar</td>
+                            <td>José Antonio</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>123456-9</td>
+                            <td>Orellana Menjivar</td>
+                            <td>José Antonio</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>123456-9</td>
+                            <td>Orellana Menjivar</td>
+                            <td>José Antonio</td>
+                            <td>10</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="col-sm-3">
+                       
+                        <input class="btn btn-success col-sm-4  " type="button" value="Imprimir"
+                        onclick="window.print()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </form>
+
+
+  
+
+
+
+
+</body>
+
+</html>
