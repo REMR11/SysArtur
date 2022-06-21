@@ -12,6 +12,20 @@ window.sr = ScrollReveal().reveal(".menu-options", {
   duration: 1000,
 });
 
+window.sr = ScrollReveal().reveal(".menu-bar", {
+  delay: 1100,
+  origin: "top",
+  distance: "250px",
+  duration: 1000,
+});
+
+window.sr = ScrollReveal().reveal(".menu-bar-items", {
+  delay: 1500,
+  origin: "top",
+  distance: "250px",
+  duration: 1000,
+});
+
 window.sr = ScrollReveal().reveal(".menu-labels", {
   delay: 2000,
   scale: 0,
