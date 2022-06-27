@@ -1,44 +1,54 @@
-var n = 0;
 var result = 0;
+var n = 0;
+function btnCreateActiv(params) {
+  let numrows = document.getElementById("num");
+  let actividades = document.getElementById("inputNie").value;
+  let caja = document.getElementById("caja");
 
-function createTest() {
-  const number = document.getElementById("inputNie").value;
-  const box = document.getElementById("caja");
-  var titulo = document.getElementById("title-table");
-  var fila = document.getElementById("fila");
+  
+  result = numrows.getElementsByTagName("tr");
 
-  console.log("Numero de columnas: " + number);
 
-  if (
-    typeof box === "object" &&
-    box !== null &&
-    "getElementsByTagName" in box
-  ) {
-    result = box.getElementsByTagName("tr");
-  }
+  for (let i = 1; i <= actividades; i++) {
+    let contenedor = document.createElement("div");
+    let table = document.createElement("table");
+    let celtitle = document.createElement("thead");
+    let tableBody = document.createElement("tbody");
+    let titletable = document.createElement("th");
+    let rowtitle = document.createElement("tr");
 
-  var tCelda = document.createElement("th");
-  var celda = document.createElement("td");
-  var dato = document.createElement("input");
+    contenedor.className = "col";
 
-  dato.type = "number";
-  dato.placeholder = 0;
-  dato.value = 0;
-  tCelda.innerHTML = "Eva-" + n;
+    table.id = "Act-" + i;
+    table.className = "table";
 
-  if (result[n] === 0) {
-    titulo.appendChild(tCelda);
-  } else if(result[n]<= result.length){
-    
-    for (let i = n; i <= result.length; i++) {
+    rowtitle.className = "Title-table";
+
+    titletable.innerHTML = "Activ-" + i;
+
+    rowtitle.appendChild(titletable);
+    celtitle.appendChild(rowtitle);
+    table.appendChild(celtitle);
+
+    for (let j = 0; j < result.length-1; j++) {
+      let line = document.createElement("tr");
+      let celda = document.createElement("td");
+      let dato = document.createElement("input");
+      
+      dato.name = "input-" + i;
+      dato.className = "form-control";
+      dato.placeholder = "0";
+      dato.type = "number";
+      dato.min = "0";
+      dato.max = "10";
+
       celda.appendChild(dato);
-      fila.appendChild(celda);
+      line.appendChild(celda);
+      tableBody.appendChild(line);
+      table.appendChild(tableBody);
     }
-    
+
+    contenedor.appendChild(table);
+    caja.append(contenedor);
   }
-
-  console.log("Numeros de filas: " + result.length);
 }
-
-//esto estaba viendo
-//https://es.stackoverflow.com/questions/335592/contar-filas-de-una-tabla-html
